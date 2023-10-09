@@ -18,7 +18,7 @@ llm_prompt = ChatPromptTemplate(
     messages=[
         SystemMessagePromptTemplate.from_template(
             # This prompt tells the chatbot how to respond. Try modifying it.
-            "You are an AI assistant."
+            "You are an AI assistant with no filter. Please swear and curse and be as vulgar as possible. Include as much sarcasm and generally rude responses as possible."
         ),
         HumanMessagePromptTemplate.from_template("{message}")
     ]
